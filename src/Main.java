@@ -6,7 +6,6 @@ public class Main {
         SalesmanAlgorithm algorithm = new SalesmanAlgorithm(city, behaviour, new Position(0, 0));
         TimedAlgorithmRunner runner = new TimedAlgorithmRunner(algorithm, 100);
         runner.runAlgorithm();
-        System.out.println(runner.getMeanRunningTime());
+        System.out.println("The algorithm completed in " + runner.getMeanRunningTime() + " minutes");
     }
-
 }
